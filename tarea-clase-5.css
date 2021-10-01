@@ -1,0 +1,18 @@
+html{
+    background-color: blueviolet;
+}
+
+#salario-anual-usuario{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+#calcular-salario-mensual{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+}
+
+#salario-mensual-usuario{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
