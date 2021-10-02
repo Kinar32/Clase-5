@@ -30,7 +30,7 @@ $botonCalcular.onclick = function(){
   console.log(salarioMensual);
 
 
-  document.querySelector("#salario-mensual-usuario").innerText = salarioMensual;
+  document.querySelector("#salario-mensual-usuario").value = salarioMensual;
 
   return false;
 
