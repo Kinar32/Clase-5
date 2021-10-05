@@ -1,17 +1,19 @@
+let botonIngresar = document.querySelector("#boton-ingresar");
 
-document.querySelector("#boton-ingresar").onclick = function () {
+function cambiarSaludo(e) {
     const $nombreUsuario = document.querySelector("#nombre-usuario").value;
     const $apellidoUsuario = document.querySelector("#apellido-usuario").value;
     const $edadUsuario = document.querySelector("#edad-usuario").value;
     let saludoCompleto = `${$nombreUsuario} ${$apellidoUsuario} de ${$edadUsuario} años de edad`;
-    document.querySelector("h1").innerText = `Bienvenido ${$nombreUsuario}`;
     document.querySelector("#respuesta-nombre").innerText = saludoCompleto;
-    return false;
+    e.preventDefault();
 }
-/*
-document.querySelector("#boton-ingresar").onclick = function (){
+
+function cambiarEncabezado(e){
     const $nombreUsuario = document.querySelector("#nombre-usuario").value;
     document.querySelector("h1").innerText = `Bienvenido ${$nombreUsuario}`;
-    return false;
+    e.preventDefault();
 }
-*/
+
+botonIngresar.addEventListener("click",cambiarSaludo,);
+botonIngresar.addEventListener("click",cambiarEncabezado,);
